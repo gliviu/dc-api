@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>dir-compare - v3.0.0 | dir-compare - v3.0.0</title>
-	<meta name="description" content="Documentation for dir-compare - v3.0.0">
+	<title>dir-compare - v3.1.5 | dir-compare - v3.1.5</title>
+	<meta name="description" content="Documentation for dir-compare - v3.1.5">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style type="text/css">/*! normalize.css v1.1.3 | MIT License | git.io/normalize */
 /* ==========================================================================
@@ -1624,6 +1624,12 @@ pre code {
   background-color: transparent;
 }
 
+blockquote {
+  margin: 1em 0;
+  padding-left: 1em;
+  border-left: 4px solid gray;
+}
+
 .tsd-typography {
   line-height: 1.333em;
 }
@@ -2646,7 +2652,7 @@ img {
 		<div class="container">
 			<div class="table-wrap">
 				<div class="table-cell">
-					<strong><a href="index.html">dir-compare - v3.0.0</a></strong>
+					<strong><a href="index.html">dir-compare - v3.1.5</a></strong>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -2704,6 +2710,7 @@ img {
 							<li class="tsd-kind-interface"><a href="interfaces/comparefilehandler.html" class="tsd-kind-icon">Compare<wbr>File<wbr>Handler</a></li>
 							<li class="tsd-kind-interface"><a href="interfaces/difference.html" class="tsd-kind-icon">Difference</a></li>
 							<li class="tsd-kind-interface"><a href="interfaces/entry.html" class="tsd-kind-icon">Entry</a></li>
+							<li class="tsd-kind-interface"><a href="interfaces/filecomparehandlers.html" class="tsd-kind-icon">File<wbr>Compare<wbr>Handlers</a></li>
 							<li class="tsd-kind-interface"><a href="interfaces/options.html" class="tsd-kind-icon">Options</a></li>
 							<li class="tsd-kind-interface"><a href="interfaces/result.html" class="tsd-kind-icon">Result</a></li>
 							<li class="tsd-kind-interface"><a href="interfaces/statistics.html" class="tsd-kind-icon">Statistics</a></li>
@@ -2746,7 +2753,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">Compare<wbr>File<wbr>Async<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>path1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, stat1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">fs.Stats</span>, path2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, stat2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">fs.Stats</span>, options<span class="tsd-signature-symbol">: </span><a href="interfaces/options.html" class="tsd-signature-type" data-tsd-kind="Interface">Options</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/gliviu/dir-compare/blob/master/src/index.d.ts#L446">index.d.ts:446</a></li>
+						<li>Defined in <a href="https://github.com/gliviu/dir-compare/blob/master/src/types.ts#L432">types.ts:432</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2794,7 +2801,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">Compare<wbr>File<wbr>Sync<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>path1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, stat1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">fs.Stats</span>, path2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, stat2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">fs.Stats</span>, options<span class="tsd-signature-symbol">: </span><a href="interfaces/options.html" class="tsd-signature-type" data-tsd-kind="Interface">Options</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/gliviu/dir-compare/blob/master/src/index.d.ts#L435">index.d.ts:435</a></li>
+						<li>Defined in <a href="https://github.com/gliviu/dir-compare/blob/master/src/types.ts#L421">types.ts:421</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2842,7 +2849,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">Compare<wbr>Name<wbr>Handler<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>name1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, name2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">: </span><a href="interfaces/options.html" class="tsd-signature-type" data-tsd-kind="Interface">Options</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">0</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">-1</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/gliviu/dir-compare/blob/master/src/index.d.ts#L485">index.d.ts:485</a></li>
+						<li>Defined in <a href="https://github.com/gliviu/dir-compare/blob/master/src/types.ts#L450">types.ts:450</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2886,7 +2893,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">Difference<wbr>State<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;equal&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;left&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;right&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;distinct&quot;</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/gliviu/dir-compare/blob/master/src/index.d.ts#L331">index.d.ts:331</a></li>
+						<li>Defined in <a href="https://github.com/gliviu/dir-compare/blob/master/src/types.ts#L317">types.ts:317</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2901,7 +2908,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">Difference<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;missing&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;file&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;directory&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;broken-link&quot;</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/gliviu/dir-compare/blob/master/src/index.d.ts#L336">index.d.ts:336</a></li>
+						<li>Defined in <a href="https://github.com/gliviu/dir-compare/blob/master/src/types.ts#L322">types.ts:322</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2916,7 +2923,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">Reason<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;different-size&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;different-date&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;different-content&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;broken-link&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;different-symlink&quot;</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/gliviu/dir-compare/blob/master/src/index.d.ts#L341">index.d.ts:341</a></li>
+						<li>Defined in <a href="https://github.com/gliviu/dir-compare/blob/master/src/types.ts#L327">types.ts:327</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2931,7 +2938,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">Result<wbr>Builder<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>entry1<span class="tsd-signature-symbol">: </span><a href="interfaces/entry.html" class="tsd-signature-type" data-tsd-kind="Interface">Entry</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span>, entry2<span class="tsd-signature-symbol">: </span><a href="interfaces/entry.html" class="tsd-signature-type" data-tsd-kind="Interface">Entry</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span>, state<span class="tsd-signature-symbol">: </span><a href="index.html#differencestate" class="tsd-signature-type" data-tsd-kind="Type alias">DifferenceState</a>, level<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, relativePath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">: </span><a href="interfaces/options.html" class="tsd-signature-type" data-tsd-kind="Interface">Options</a>, statistics<span class="tsd-signature-symbol">: </span><a href="interfaces/statistics.html" class="tsd-signature-type" data-tsd-kind="Interface">Statistics</a>, diffSet<span class="tsd-signature-symbol">: </span><a href="interfaces/difference.html" class="tsd-signature-type" data-tsd-kind="Interface">Difference</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span>, reason<span class="tsd-signature-symbol">: </span><a href="index.html#reason" class="tsd-signature-type" data-tsd-kind="Type alias">Reason</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/gliviu/dir-compare/blob/master/src/index.d.ts#L116">index.d.ts:116</a></li>
+						<li>Defined in <a href="https://github.com/gliviu/dir-compare/blob/master/src/types.ts#L102">types.ts:102</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -3017,44 +3024,17 @@ img {
 			<section class="tsd-panel tsd-member tsd-kind-variable">
 				<a name="filecomparehandlers" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagConst">Const</span> file<wbr>Compare<wbr>Handlers</h3>
-				<div class="tsd-signature tsd-kind-icon">file<wbr>Compare<wbr>Handlers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>defaultFileCompare<span class="tsd-signature-symbol">: </span><a href="interfaces/comparefilehandler.html" class="tsd-signature-type" data-tsd-kind="Interface">CompareFileHandler</a><span class="tsd-signature-symbol">; </span>lineBasedFileCompare<span class="tsd-signature-symbol">: </span><a href="interfaces/comparefilehandler.html" class="tsd-signature-type" data-tsd-kind="Interface">CompareFileHandler</a><span class="tsd-signature-symbol"> }</span></div>
+				<div class="tsd-signature tsd-kind-icon">file<wbr>Compare<wbr>Handlers<span class="tsd-signature-symbol">:</span> <a href="interfaces/filecomparehandlers.html" class="tsd-signature-type" data-tsd-kind="Interface">FileCompareHandlers</a><span class="tsd-signature-symbol"> = ...</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/gliviu/dir-compare/blob/master/src/index.d.ts#L463">index.d.ts:463</a></li>
+						<li>Defined in <a href="https://github.com/gliviu/dir-compare/blob/master/src/index.ts#L90">index.ts:90</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Available file content comparison handlers.
+						<p>File comparison handlers.
 						These handlers are used when <a href="interfaces/options.html#comparecontent">Options.compareContent</a> is set.</p>
 					</div>
-				</div>
-				<div class="tsd-type-declaration">
-					<h4>Type declaration</h4>
-					<ul class="tsd-parameters">
-						<li class="tsd-parameter">
-							<h5>default<wbr>File<wbr>Compare<span class="tsd-signature-symbol">: </span><a href="interfaces/comparefilehandler.html" class="tsd-signature-type" data-tsd-kind="Interface">CompareFileHandler</a></h5>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Default file content comparison handlers, used if <a href="interfaces/options.html#comparefileasync">Options.compareFileAsync</a> or <a href="interfaces/options.html#comparefilesync">Options.compareFileSync</a> are not specified.</p>
-								</div>
-								<p>Performs binary comparison.</p>
-							</div>
-						</li>
-						<li class="tsd-parameter">
-							<h5>line<wbr>Based<wbr>File<wbr>Compare<span class="tsd-signature-symbol">: </span><a href="interfaces/comparefilehandler.html" class="tsd-signature-type" data-tsd-kind="Interface">CompareFileHandler</a></h5>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Compares files line by line.</p>
-								</div>
-								<p>Options:</p>
-								<ul>
-									<li>ignoreLineEnding - tru/false (default: false)</li>
-									<li>ignoreWhiteSpaces - tru/false (default: false)</li>
-								</ul>
-							</div>
-						</li>
-					</ul>
 				</div>
 			</section>
 		</section>
@@ -3070,7 +3050,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/gliviu/dir-compare/blob/master/src/index.d.ts#L19">index.d.ts:19</a></li>
+								<li>Defined in <a href="https://github.com/gliviu/dir-compare/blob/master/src/index.ts#L52">index.ts:52</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3113,7 +3093,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/gliviu/dir-compare/blob/master/src/index.d.ts#L11">index.d.ts:11</a></li>
+								<li>Defined in <a href="https://github.com/gliviu/dir-compare/blob/master/src/index.ts#L26">index.ts:26</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
